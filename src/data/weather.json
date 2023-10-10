@@ -1,0 +1,98 @@
+{
+  "Düsseldorf": [
+    {
+      "date": "current",
+      "temperature": 15,
+      "condition": "Cloudy",
+      "humidity": 68,
+      "windSpeed": 10,
+      "iconUrl": "/cloudy.svg"
+    },
+    {
+      "date": "Monday",
+      "temperature": 14,
+      "condition": "Cloudy",
+      "iconUrl": "/cloudy.svg"
+    },
+    {
+      "date": "Tuesday",
+      "temperature": 15,
+      "condition": "Partly Cloudy",
+      "iconUrl": "/partly_cloudy.svg"
+    },
+    {
+      "date": "Wednesday",
+      "temperature": 16,
+      "condition": "Sunny",
+      "iconUrl": "/sunny.svg"
+    }
+  ],
+  "Málaga": [
+    {
+      "date": "current",
+      "temperature": 25,
+      "condition": "Sunny",
+      "humidity": 50,
+      "windSpeed": 5,
+      "iconUrl": "/sunny.svg"
+    },
+    {
+      "date": "Monday",
+      "temperature": 26,
+      "condition": "Partly Cloudy",
+      "iconUrl": "/partly_cloudy.svg"
+    },
+    {
+      "date": "Tuesday",
+      "temperature": 25,
+      "condition": "Sunny",
+      "iconUrl": "/sunny.svg"
+    },
+    {
+      "date": "Wednesday",
+      "temperature": 24,
+      "condition": "Cloudy",
+      "iconUrl": "/cloudy.svg"
+    }
+  ],
+  "Berlin": [
+    {
+      "date": "current",
+      "temperature": 13,
+      "condition": "Rainy",
+      "humidity": 75,
+      "windSpeed": 12,
+      "iconUrl": "/rainy.svg"
+    },
+    {
+      "date": "Monday",
+      "temperature": 12,
+      "condition": "Rainy",
+      "iconUrl": "/rainy.svg"
+    },
+    {
+      "date": "Tuesday",
+      "temperature": 13,
+      "condition": "Cloudy",
+      "iconUrl": "/cloudy.svg"
+    },
+    {
+      "date": "Wednesday",
+      "temperature": 14,
+      "condition": "Partly Cloudy",
+      "iconUrl": "/partly_cloudy.svg"
+    }
+  ],
+  "ui": [
+    {
+      "type": "header",
+      "text": "Weather for {cityName}"
+    },
+    {
+      "type": "weatherInfo"
+    },
+    {
+      "type": "daysForecast"
+    }
+  ]
+}
