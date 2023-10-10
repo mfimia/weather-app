@@ -1,30 +1,30 @@
 export interface IWeather {
-  date: string;
-  temperature: number;
-  condition: string;
-  iconUrl: string;
-  humidity?: number;
-  windSpeed?: number;
+  date: string
+  temperature: number
+  condition: string
+  iconUrl: string
+  humidity?: number
+  windSpeed?: number
 }
 
 export interface UIComponent {
-  type: string;
+  type: string
   text: string
 }
 
 export interface CityWeatherData {
-  [cityName: string]: IWeather[];
+  [cityName: string]: IWeather[]
 }
 
 export interface UIData {
-  ui: UIComponent[];
+  ui: UIComponent[]
 }
 
-export type IWeatherData = CityWeatherData & UIData;
+export type IWeatherData = CityWeatherData & UIData
 
 export interface IWeatherPayload {
-  cityName: Cities;
-  cityData: IWeather[];
+  cityName: Cities
+  cityData: IWeather[]
   ui: UIComponent[]
 }
 

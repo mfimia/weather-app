@@ -1,6 +1,6 @@
-import { NextRequest, NextResponse } from "next/server"
+import { NextRequest, NextResponse } from 'next/server'
 import weatherData from '../../../data/weather.json'
-import { IWeather, IWeatherData } from "@/app/types/data"
+import { IWeather, IWeatherData } from '@/app/types/data'
 
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl
@@ -13,7 +13,8 @@ export async function GET(req: NextRequest) {
 
   const cityData: IWeather[] | undefined = parsedData[city] as IWeather[]
 
-  if (!cityData) return NextResponse.json({ code: 404, data: null, cityName: '' })
+  if (!cityData)
+    return NextResponse.json({ code: 404, data: null, cityName: '' })
 
   const data = { cityData, ui: parsedData.ui, cityName: city }
 

@@ -14,7 +14,11 @@ const CitySelector: FC<ICitySelectorProps> = ({ city, setCity }) => {
         onChange={(e) => setCity(e.target.value as Cities)}
         className="p-2 border rounded"
       >
-        {Object.values(Cities).map(cityName => <option key={cityName} value={cityName}>{cityName}</option>)}
+        {Object.values(Cities).map((cityName) => (
+          <option key={cityName} value={cityName}>
+            {cityName}
+          </option>
+        ))}
       </select>
     </div>
   )

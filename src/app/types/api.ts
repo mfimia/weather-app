@@ -1,4 +1,4 @@
-import { IWeatherPayload } from "./data"
+import { IWeatherPayload } from './data'
 
 export interface IApiResponse {
   code: number
