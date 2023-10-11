@@ -80,3 +80,5 @@ Standard NextJS directory containing all necessary static assets for your applic
 ## Deployment
 
 Follow the standard [Next.js deployment procedure](https://nextjs.org/docs/pages/building-your-application/deploying). The application is designed to run in any environment with minimal configurations.
+
+[Link to deployed version](https://weather-app-ashy-seven.vercel.app/)

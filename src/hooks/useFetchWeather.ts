@@ -21,5 +21,5 @@ export const useFetchWeather = (
     if (city) {
       fetchWeather()
     }
-  }, [city, fetchWeather])
+  }, [city])
 }
