@@ -1,4 +1,5 @@
 import { IWeather } from '@/app/types/data'
+import Image from 'next/image'
 import { FC } from 'react'
 
 interface IDayForecastProps {
@@ -7,11 +8,13 @@ interface IDayForecastProps {
 
 const DayForecast: FC<IDayForecastProps> = ({ forecast }) => {
   return (
-    <div className="p-2 border rounded shadow-sm">
-      <img
-        className="w-10 h-10 mb-2"
+    <div data-testid="dayForecast" className="p-2 border rounded shadow-sm">
+      <Image
+        className="mb-2"
         src={forecast.iconUrl}
         alt={forecast.condition}
+        width={40}
+        height={40}
       />
       <p className="text-gray-700 font-medium">{forecast.date}</p>
       <p>{`Temperature: ${forecast.temperature}°C`}</p>

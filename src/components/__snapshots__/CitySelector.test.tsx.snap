@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CitySelector renders a SELECT element with 3 options 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-between items-center mb-5"
+  >
+    <select
+      class="p-2 border rounded cursor-pointer"
+    >
+      <option
+        value="Düsseldorf"
+      >
+        Düsseldorf
+      </option>
+      <option
+        value="Málaga"
+      >
+        Málaga
+      </option>
+      <option
+        value="Berlin"
+      >
+        Berlin
+      </option>
+    </select>
+  </div>
+</DocumentFragment>
+`;

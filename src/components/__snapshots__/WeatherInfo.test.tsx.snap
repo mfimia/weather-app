@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DayForecast should render correctly 1`] = `
+<div
+  data-testid="weatherInfo"
+>
+  <div
+    class="flex items-center mb-4"
+  >
+    <img
+      alt="Sunny"
+      class="mr-4"
+      data-nimg="1"
+      decoding="async"
+      height="64"
+      loading="lazy"
+      src="/_next/image?url=https%3A%2F%2Fexample.com%2Fsunny-icon.png&w=128&q=75"
+      srcset="/_next/image?url=https%3A%2F%2Fexample.com%2Fsunny-icon.png&w=64&q=75 1x, /_next/image?url=https%3A%2F%2Fexample.com%2Fsunny-icon.png&w=128&q=75 2x"
+      style="color: transparent;"
+      width="64"
+    />
+    <div>
+      <p
+        class="text-xl"
+      >
+        Temperature: 22°C
+      </p>
+      <p
+        class="text-gray-600"
+      >
+        Condition: Sunny
+      </p>
+    </div>
+  </div>
+  <div
+    class="mb-4"
+  >
+    <p
+      class="text-sm text-gray-600"
+    >
+      Humidity: 58%
+    </p>
+    <progress
+      class="w-full h-2 bg-blue-200"
+      max="100"
+      value="58"
+    />
+  </div>
+  <p
+    class="text-gray-600 mb-4"
+  >
+    Wind Speed: 10 km/h
+  </p>
+</div>
+`;

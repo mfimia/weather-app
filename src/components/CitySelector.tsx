@@ -1,4 +1,4 @@
-import { Cities } from '@/app/types/data'
+import { Cities } from '../app/types/data'
 import { FC, Dispatch, SetStateAction } from 'react'
 
 interface ICitySelectorProps {
@@ -12,7 +12,7 @@ const CitySelector: FC<ICitySelectorProps> = ({ city, setCity }) => {
       <select
         value={city}
         onChange={(e) => setCity(e.target.value as Cities)}
-        className="p-2 border rounded"
+        className="p-2 border rounded cursor-pointer"
       >
         {Object.values(Cities).map((cityName) => (
           <option key={cityName} value={cityName}>

@@ -1,5 +1,6 @@
 import { IWeather } from '@/app/types/data'
-import React, { FC, Fragment } from 'react'
+import Image from 'next/image'
+import React, { FC } from 'react'
 
 interface IWeatherInfoProps {
   currentWeather: IWeather
@@ -7,12 +8,14 @@ interface IWeatherInfoProps {
 
 const WeatherInfo: FC<IWeatherInfoProps> = ({ currentWeather }) => {
   return (
-    <Fragment>
+    <div data-testid="weatherInfo">
       <div className="flex items-center mb-4">
-        <img
-          className="w-16 h-16 mr-4"
+        <Image
+          className="mr-4"
           src={currentWeather.iconUrl}
           alt={currentWeather.condition}
+          width={64}
+          height={64}
         />
         <div>
           <p className="text-xl">{`Temperature: ${currentWeather.temperature}°C`}</p>
@@ -28,7 +31,7 @@ const WeatherInfo: FC<IWeatherInfoProps> = ({ currentWeather }) => {
         ></progress>
       </div>
       <p className="text-gray-600 mb-4">{`Wind Speed: ${currentWeather.windSpeed} km/h`}</p>
-    </Fragment>
+    </div>
   )
 }
 
