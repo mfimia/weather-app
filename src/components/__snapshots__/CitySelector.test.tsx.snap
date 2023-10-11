@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CitySelector renders a SELECT element with 3 options 1`] = `
-<DocumentFragment>
+<div>
   <div
     class="flex justify-between items-center mb-5"
   >
@@ -25,5 +25,5 @@ exports[`CitySelector renders a SELECT element with 3 options 1`] = `
       </option>
     </select>
   </div>
-</DocumentFragment>
+</div>
 `;
